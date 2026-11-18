@@ -23,15 +23,15 @@ USER_DATA_WITHOUT_NAME = generate_courier_data()[3]
  NEW_NAME) = generate_courier_data()
 
 WITH_INGREDIENTS = {"ingredients":
-                        ["6ae327a87e8698001b542b3b",
-                         "6ae327a87e8698001b542b38",
-                         "6ae327a87e8698001b542b45"
+                        ["691577430cc94f001a65b859",
+                         "691577430cc94f001a65b866",
+                         "691577430cc94f001a65b85c"
                          ]
                     }
 INVALID_INGREDIENT = {"ingredients":
                           ["9999999999",
-                           "6ae327a87e8698001b542b38",
-                           "6ae327a87e8698001b542b45"
+                           "691577430cc94f001a65b866",
+                           "691577430cc94f001a65b85c"
                            ]
                       }
 NO_INGREDIENTS = {"ingredients":

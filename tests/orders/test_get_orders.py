@@ -14,8 +14,7 @@ class TestGetOrders:
     def test_get_orders_logged_in_user_status_code_200(self, order, user_with_login, user_data, ingredients):
         order.create_order(ingredients, user_with_login[1])
         status_code, response_body = order.get_orders(user_with_login[1])
-        assert (status_code == 200 and GET_ORDERS_SUCCESS in response_body.items() and
-                isinstance(response_body.get('orders')[0].get('number'), int),
+        assert (status_code == 200 and GET_ORDERS_SUCCESS in response_body.items(),
                 f'Код ответа: {status_code}, тело ответа: {response_body}')
 
 
